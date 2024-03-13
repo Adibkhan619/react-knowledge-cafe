@@ -9,7 +9,7 @@ function Bookmarks({ bookmarks, readingTime }) {
                
             <h1 className="text-2xl font-bold px-5">Bookmarks: {bookmarks.length}</h1>
             {
-                bookmarks.map(bookmark => <Bookmark key={bookmark.id} bookmark={bookmark}></Bookmark>)
+                bookmarks.map((bookmark, idx) => <Bookmark key={idx} bookmark={bookmark}></Bookmark>)
             }
         </div>
     );

@@ -17,7 +17,7 @@ const Blog = ({ blog, handleAddToBookmark, handleMarkAsRead }) => {
   } = blog;
 
   return (
-    <div className="space-y-5 my-20">
+    <div className="space-y-5 mb-20">
       <img src={cover_img} alt=""></img>
 
       <div className="flex justify-between">
@@ -45,7 +45,7 @@ const Blog = ({ blog, handleAddToBookmark, handleMarkAsRead }) => {
           </span>
         ))}
       </p>
-      <button onClick={() => handleMarkAsRead(read_time)}>Mark As read</button>
+      <button onClick={() => handleMarkAsRead(id, read_time)}>Mark As read</button>
       <div className="border-b-2"></div>
     </div>
   );
