@@ -1,7 +1,9 @@
 import PropTypes from "prop-types";
+import { PiBookmarksDuotone } from "react-icons/pi";
 
-const Blog = ({ blog }) => {
-  console.log(blog);
+
+const Blog = ({ blog, handleAddToBookmark }) => {
+//   console.log(blog);
 
   const {
     id,
@@ -26,14 +28,23 @@ const Blog = ({ blog }) => {
             <p className="text-gray-400">{posting_date}</p>
           </div>
         </div>
-        <p className="text-gray-400">{read_time} Min Read</p>
+        <div className="flex items-center gap-2">
+          <p className="text-gray-400">{read_time} Min Read</p>
+          <button 
+          onClick={() => handleAddToBookmark(blog)}
+          className="text-3xl text-gray-500">
+            <PiBookmarksDuotone />
+          </button>
+        </div>
       </div>
       <h2 className="font-bold text-4xl">{title}</h2>
       <p>
-        {hashtags.map((hash, idx) => <span key={idx} className="mr-5 text-gray-600"><a href="">{hash}</a></span>)
-        
-        
-        }</p>
+        {hashtags.map((hash, idx) => (
+          <span key={idx} className="mr-5 text-gray-600">
+            <a href="">{hash}</a>
+          </span>
+        ))}
+      </p>
       <a href="">Mark as read</a>
       <div className="border-b-2"></div>
     </div>
@@ -42,5 +53,6 @@ const Blog = ({ blog }) => {
 
 Blog.propTypes = {
   blog: PropTypes.object.isRequired,
+  handleAddToBookmark: PropTypes.func
 };
 export default Blog;
