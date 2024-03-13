@@ -6,6 +6,7 @@ import Bookmarks from "./Components/Bookmarks/Bookmarks";
 
 function App() {
   const [bookmarks, setBookmarks] = useState([]);
+  const [readingTime, setReadingTime] = useState(0);
 
   const handleAddToBookmark = (blog) => {
     const newBookmarks = [...bookmarks, blog];
@@ -13,12 +14,20 @@ function App() {
     // console.log(setBookmarks);
   };
 
+  const handleMarkAsRead = (time) => {
+    const newReadingTime = readingTime + time;
+    setReadingTime(newReadingTime);
+  };
+
   return (
     <>
       <Header></Header>
-      <div className="md:flex mt-10">
-        <Blogs handleAddToBookmark={handleAddToBookmark}></Blogs>
-        <Bookmarks bookmarks={bookmarks}></Bookmarks>
+      <div className="md:flex mt-10 gap-10">
+        <Blogs
+          handleAddToBookmark={handleAddToBookmark}
+          handleMarkAsRead={handleMarkAsRead}
+        ></Blogs>
+        <Bookmarks readingTime={readingTime} bookmarks={bookmarks}></Bookmarks>
       </div>
     </>
   );

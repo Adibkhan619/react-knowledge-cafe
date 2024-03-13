@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { PiBookmarksDuotone } from "react-icons/pi";
 
 
-const Blog = ({ blog, handleAddToBookmark }) => {
+const Blog = ({ blog, handleAddToBookmark, handleMarkAsRead }) => {
 //   console.log(blog);
 
   const {
@@ -45,7 +45,7 @@ const Blog = ({ blog, handleAddToBookmark }) => {
           </span>
         ))}
       </p>
-      <a href="">Mark as read</a>
+      <button onClick={() => handleMarkAsRead(read_time)}>Mark As read</button>
       <div className="border-b-2"></div>
     </div>
   );
@@ -53,6 +53,7 @@ const Blog = ({ blog, handleAddToBookmark }) => {
 
 Blog.propTypes = {
   blog: PropTypes.object.isRequired,
-  handleAddToBookmark: PropTypes.func
+  handleAddToBookmark: PropTypes.func,
+  handleMarkAsRead: PropTypes.func
 };
 export default Blog;
