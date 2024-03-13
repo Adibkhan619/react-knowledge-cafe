@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "title": "The Secret Garden",
+      "author-name": "Alice Waters",
+      "cover-img": "https://i.ibb.co/NtQYjNs/johannes-plenio-hvrp-Omu-Mr-AI-unsplash.jpg",
+      "author-img": "https://example.com/alice-waters.jpg",
+      "read-time": 120,
+      "posting-date": "2024-03-13",
+      "hashtags": ["#fiction", "#classics", "#gardening"]
+    },
+    {
+      "id": 2,
+      "title": "Beyond the Horizon",
+      "author-name": "Maxwell Blake",
+      "cover-img": "https://i.ibb.co/k3n05zV/joshua-earle-9idq-IGr-Lu-TE-unsplash.jpg",
+      "author-img": "https://example.com/maxwell-blake.jpg",
+      "read-time": 210,
+      "posting-date": "2024-03-12",
+      "hashtags": ["#scifi", "#adventure", "#future"]
+    },
+    {
+      "id": 3,
+      "title": "Cooking with Love",
+      "author-name": "Ella Summers",
+      "cover-img": "https://i.ibb.co/WFjNjPF/mohamed-nohassi-odx-B5o-IG-i-A-unsplash.jpg",
+      "author-img": "https://example.com/ella-summers.jpg",
+      "read-time": 90,
+      "posting-date": "2024-03-11",
+      "hashtags": ["#cookbook", "#recipes", "#healthy"]
+    },
+    {
+      "id": 4,
+      "title": "Into the Wild",
+      "author-name": "Samuel Rivers",
+      "cover-img": "https://i.ibb.co/yBFJF7W/luca-bravo-9l-326-FISzk-unsplash.jpg",
+      "author-img": "https://example.com/samuel-rivers.jpg",
+      "read-time": 150,
+      "posting-date": "2024-03-10",
+      "hashtags": ["#adventure", "#nature", "#exploration"]
+    },
+    {
+      "id": 5,
+      "title": "The Art of Mindfulness",
+      "author-name": "Grace Thompson",
+      "cover-img": "https://i.ibb.co/D10YxmF/patrick-fore-0gkw-9fy0e-Q-unsplash.jpg",
+      "author-img": "https://example.com/grace-thompson.jpg",
+      "read-time": 60,
+      "posting-date": "2024-03-09",
+      "hashtags": ["#selfhelp", "#wellness", "#meditation"]
+    }
+  ]
+  
